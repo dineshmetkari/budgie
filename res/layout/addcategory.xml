@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:id="@+id/linearLayout1" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:padding="6dip">
+    	
+    	<LinearLayout android:orientation="horizontal"
+    		android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"
+    		android:padding="6dip">
+    		<TextView android:text="@string/categoryname" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    		<EditText android:text="" android:maxLength="50" android:id="@+id/edit_categoryname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="500px"></EditText>		
+    	</LinearLayout>
+    	
+    	<LinearLayout android:orientation="horizontal"
+    		android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"
+    		android:padding="6dip">
+    		<TextView android:text="@string/threshold" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    		<EditText android:text="" android:numeric="decimal" android:maxLength="10" android:id="@+id/edit_categorythreshhold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="100px"></EditText>		
+    	</LinearLayout>
+    	
+    	<LinearLayout android:orientation="horizontal"
+    		android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"
+    		android:padding="6dip">
+    		<Button android:text="@string/addcategory" android:id="@+id/button_addcategory" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    		
+    	</LinearLayout>    
+    </LinearLayout>
+

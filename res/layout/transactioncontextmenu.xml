@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/assigncategory"
+    	android:icon="@drawable/icon"
+    	android:title="@string/assigncategory" />
+    <item android:id="@+id/removecategory"
+    	android:icon="@drawable/icon"
+    	android:title="@string/removecategory" />	
+    <item android:id="@+id/deletetransaction"
+    	android:icon="@drawable/icon"
+    	android:title="@string/deletetransaction" />        
+</menu>

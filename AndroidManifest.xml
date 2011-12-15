@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jayceebee.budgie"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:name=".BudgieApplication" android:icon="@drawable/icon" android:label="@string/app_name" android:enabled="true" android:debuggable="true">
+    	<uses-permission android:name="android.permission.READ_SMS"/>
+	    <uses-permission android:name="android.permission.WRITE_SMS"/>
+	    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	    
+        <!-- <activity android:name=".activity.home"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.jayceebee.budgie.intent.action.UPDATETRANSACTIONS"/>
+                <category android:name="com.jayceebee.budgie.intent.category.UPDATEALLSQL" />
+                <category android:name="android.intent.category.LAUNCHER" />                
+            </intent-filter>
+        </activity> -->
+        <activity android:name=".activity.BudgieActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.jayceebee.budgie.intent.action.UPDATETRANSACTIONS"/>
+                <category android:name="com.jayceebee.budgie.intent.category.UPDATEALLSQL" />
+                <category android:name="android.intent.category.LAUNCHER" />              
+            </intent-filter>
+        </activity> 
+		<activity android:name="org.achartengine.GraphicalActivity" />
+		
+		<service android:name=".services.BudgieService" android:enabled="true">
+			<intent-filter>
+				<action android:name="com.jayceebee.budgie.services.BudgieService">
+				<!-- <action android:name="android.provider.Telephony.SMS_RECEIVED"/>--> 
+				</action>
+			</intent-filter>
+		</service>
+		
+		<!-- <receiver android:name="SMSReceiver">
+	    	<intent-filter>
+	        	<action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+	        </intent-filter>
+	    </receiver>
+	    -->
+	    <activity android:name=".activity.CategoryHome" android:label="@string/categories">
+	    	<intent-filter>
+	            <action android:name="com.jayceebee.budgie.intent.action.UPDATECATEGORIES"/>
+	            <category android:name="com.jayceebee.budgie.intent.category.UPDATEALLSQL" />
+	        </intent-filter>
+	    </activity>
+	    <activity android:name=".activity.MerchantHome" android:label="@string/places">
+	    	<intent-filter>
+	            <action android:name="com.jayceebee.budgie.intent.action.UPDATEMERCHANTS"/>
+	            <category android:name="com.jayceebee.budgie.intent.category.UPDATEALLSQL" />
+	        </intent-filter>
+	    </activity>
+	    <activity android:name=".activity.AddCategoryActivity" android:label="@string/addcategory">
+	    </activity>
+	    <activity android:name=".activity.MerchantDetailHome">
+	    </activity>
+	    <activity android:name=".activity.CategoryDetailHome">
+	    </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+    
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Budgie</string>
+    <string name="appSlogan">manage your spend</string>
+    <string name="appDescription">Budget Manager</string>
+    <string name="appAuthor">Jason Penton</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="editcategories">Categories</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="addcategory">Add Category</string>
+    <string name="categories">Categories</string>
+    <string name="viewchart">Chart</string>
+    <string name="places">Merchants</string>
+    <string name="assigncategory">Assign Category</string>
+    <string name="assigntocategory">Assign To Category</string>
+    <string name="removecategory">Remove Category</string>
+    <string name="deletetransaction">Delete Transaction</string>
+    <string name="categoryname">Category Name</string>
+    <string name="threshold">Threshold</string>
+    <string name="currencysign">R</string>
+</resources>
