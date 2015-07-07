@@ -1,0 +1,1 @@
+monitor all your bank transactions from your sms's
